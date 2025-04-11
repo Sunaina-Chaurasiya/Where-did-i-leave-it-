@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item Detection</title>
+    
+    <!-- ✅ Link to your static CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- ✅ Link to your script -->
+    <script defer src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+    <h1>Item Detection System</h1>
+
+    <button id="start-detection">Start Detection</button>
+    <button id="stop-detection" style="display:none;">Stop Detection</button>
+    <button id="find-item">Find Item</button>
+
+    <div id="camera-container" style="margin-top:20px;">
+        <img id="camera-feed" src="" width="480" height="360"> <!-- Reduced size -->
+    </div>
+    
+
+    <p id="voice-result" style="font-weight: bold; margin-top: 20px;"></p>
+</body>
+</html>
+
